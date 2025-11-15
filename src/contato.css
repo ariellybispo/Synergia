@@ -1,0 +1,211 @@
+:root {
+    --color-green-dark: #008779; 
+    --color-green-light: #008779; 
+    --color-orange: #d9785c; 
+    --color-white: #ffffff;
+    --color-gray-text: #4a4a4a;
+    --color-light-gray: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ 
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-gray-text);
+    line-height: 1.6;
+    background-color: var(--color-green-dark); 
+    min-height: 100vh;
+    margin-top: 0; 
+    padding-top: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-contato {
+   background-color: transparent;
+    padding: 0; 
+    margin-top: 0;
+}
+
+.navbar {
+ display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: var(--color-white);
+}
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--color-white); 
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--color-green-light);
+}
+   .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;     
+    padding-right: 20px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+}
+
+
+
+
+
+.contact-container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: var(--color-green-dark);
+    color: var(--color-white);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+ 
+    font-weight: 700;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    font-size: 1.0em;
+}
+
+.info-item i {
+    font-size: 1.3em; 
+    width: 35px; 
+    text-align: center;
+}
+
+.instagram-icon i {
+    font-size: 2em;
+    margin-top: 10px;
+}
+.instagram-icon p {
+    display: none;
+}
+
+.contact-form-card {
+    flex: 1.2;
+    background-color: var(--color-white);
+    padding: 50px;
+    border-radius: 0 10px 10px 0; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.interesed-in-label {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--color-gray-text);
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-size: 0.9em;
+    color: var(--color-gray-text);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+    color: var(--color-gray-text);
+    background-color: transparent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: var(--color-green-dark);
+}
+
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btn-send {
+    background-color: #008779; 
+    color: var(--color-white);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-send:hover {
+    background-color: #165259;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px;
+    }
+    .navbar nav {
+        
+        display: none; 
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-form-card {
+        border-radius: 0 0 10px 10px;
+    }
+    .contact-info {
+        border-radius: 10px 10px 0 0;
+    }
+    
+}
